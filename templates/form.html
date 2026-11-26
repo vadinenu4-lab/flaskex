@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head> <title>form</title></head>
+<head>
+    <title>Form</title>
+</head>
 <body>
-<form action = "http://127.0.0.1:5000" method="post">
-<table>
-<tr><td>Name</td>
-<td><input type="text" name = "uname"></td></tr>
-<tr><td>Password</td>
-<td><input type="password" name="pass"></td></tr>
-<tr><td><input type = "submit"></td></tr>
-</table>
+
+<form action="/formlogin" method="post">
+
+    Name:
+    <input type="text" name="uname">
+    <br><br>
+    Password:
+    <input type="password" name="pass">
+    <br><br>
+
+    <input type="submit" value="Login">
+
 </form>
+
 </body>
 </html>

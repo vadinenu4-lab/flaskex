@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>msg</title></head>
+<body>
+<h1>Welcome {{name}}</h1> 
+   <table border="7">
+    {% for key,value in result.items() %}
+    <tr>
+        <th>{{key}}</th>
+        <td>{{value}}</td>
+    </tr>
+    {% endfor %}
+   </table>
+</body>
+</html>
