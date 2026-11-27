@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head><title>fetch data</title></head>
+    <body>
+        <h4>thankyou for Register </h4>
+        <table border="7">
+            {% for key,value in result.items() %}
+            <tr>
+                <th>{{key}}</th>
+                <td>{{value}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
