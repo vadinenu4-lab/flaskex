@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+
+<form action="/flogin" method="post">
+    {% if error %}
+    <P><strong>{{error}}</strong></P>
+    {% endif %}    
+    Name:
+    <input type="text" name="uname">
+    <br><br>
+    Password:
+    <input type="password" name="pass">
+    <br><br>
+
+    <input type="submit" value="Login">
+
+</form>
+
+</body>
+</html>

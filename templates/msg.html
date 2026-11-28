@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>msg</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+<h1>Welcome {{name}}</h1> 
+{% with msg=get_flashed_messages() %}
+   {% if msg %}
+        {% for m in msg %}
+            {{m}}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+</body>
+</html>
